@@ -1,8 +1,7 @@
 import React, { FC } from 'react'
-import { EosImg } from '@frontend-packages/russw-icon-kit'
+import { Logo, Typography } from '@dragonlorde/sapfiron-ui-kit'
 import { Styled } from './styles/Welcome.styled'
 import { WelcomeModel } from './model/Welcome.model'
-import { Typography } from '../Typography'
 
 const {
   WelcomeStyledContainer,
@@ -10,11 +9,11 @@ const {
 } = Styled
 
 const Welcome:FC<WelcomeModel> = ({
-  text= 'Добро пожаловать в электронную образовательноую среду издательства «Русское слово»',
+  text= 'Добро пожаловать в электронную среду управления ПОЛЮС',
 }) => (
   <WelcomeStyledWrapper>
     <WelcomeStyledContainer>
-      <EosImg
+      <Logo
         width={130}
         height={130}
       />

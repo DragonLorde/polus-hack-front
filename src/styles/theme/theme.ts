@@ -23,6 +23,7 @@ const theme = {
     boxShadow: {
       dark_200: '2px 3px 3px rgba(0, 0, 0, 0.2)',
       dark_70: '3px 3px 3px rgba(0, 0, 0, 0.07)',
+      panel: '0px -2px 4px rgba(14, 51, 137, 0.02), 0px 2px 4px rgba(14, 51, 137, 0.1)',
     },
     gradient: {
       transparent: 'linear-gradient(to top, #000, rgba(0, 0, 0, 0))',
@@ -33,12 +34,12 @@ const theme = {
   },
   colors: {
     gray_500: '#B7B7B7',
-    gray_200: '#F5F5F5',
+    gray_200: '#373936',
     gray_100: '#F2F5FA',
     white: '#FFFFFF',
     red_500: '#ED1C24',
     red_300: '#DC4B54',
-    blue_600: '#4A77C5',
+    blue_600: '#FFB635',
     blue_400: '#0EAECB',
     blue_200: '#E2E9F5',
     blue_100: '#DBF3F7',
@@ -47,3 +48,4 @@ const theme = {
 }
 
 export default theme
+

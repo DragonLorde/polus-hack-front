@@ -9,6 +9,7 @@ const CarGoContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin: 10px;
+  gap: 16px;
 `
 
 const InputContainer = styled.div`

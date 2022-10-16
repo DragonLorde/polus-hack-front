@@ -1,7 +1,6 @@
+import { Layout } from '@dragonlorde/sapfiron-ui-kit'
 import React, { FC, PropsWithChildren, useMemo } from 'react'
-import {
-  Layout,
-} from '@frontend-packages/russw-ui-kit'
+
 import { LayoutHeader, LayoutSider } from './components'
 
 const LayoutContainer:FC<PropsWithChildren> = ({ children }) => {

@@ -7,27 +7,27 @@ import { combineStorage } from '../service/Storage'
 const initialValues = {
   userData: {
     emailVerified: false,
-    email: '',
+    email: 'safasf',
     eosBackend: {
       roles: [' '],
     },
-    familyName: '',
-    givenName: '',
-    name: '',
-    preferredUsername: '',
+    familyName: 'asfasf',
+    givenName: 'asfasf',
+    name: 'asfasf',
+    preferredUsername: 'asfasf',
   },
   accessToken: '',
   refreshToken: '',
   isLoading: false,
-  isAuth: false,
+  isAuth: true,
   isCookie: false,
 }
 
 export const AuthContextStore = createContext<any>(initialValues)
 
 const AuthStoreContext:FC<PropsWithChildren> = ({ children }) => {
-  const values = combineStorage.get('auth')
-  const [state, dispatch] = useReducer(reducer, values || initialValues)
+  //const values = combineStorage.get('auth')
+  const [state, dispatch] = useReducer(reducer, initialValues)
   const contextValue = useMemo(() => ({
     state,
     dispatch,

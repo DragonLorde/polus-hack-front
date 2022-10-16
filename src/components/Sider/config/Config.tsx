@@ -1,13 +1,10 @@
-import {
-  Achievement, Settings, School, Community, TeacherBlackboard,
-} from '@frontend-packages/russw-icon-kit'
 import { ROUTES } from '../../../routes/ROUTES'
 
 export const sideConfig = {
   educationalOrganization: {
     role: ['ADMIN', 'LIBRARIAN'],
     config: {
-      icon: <School />,
+      icon: <div />,
       title: 'Образовательная организация',
       items: [
         {
@@ -36,7 +33,7 @@ export const sideConfig = {
   users: {
     role: ['ADMIN', 'LIBRARIAN'],
     config: {
-      icon: <Community />,
+      icon: <div />,
       title: 'Пользователи',
       items: [
         {
@@ -57,7 +54,7 @@ export const sideConfig = {
   licenses: {
     role: ['ADMIN', 'LIBRARIAN'],
     config: {
-      icon: <Achievement />,
+      icon: <div />,
       title: 'Лицензии',
       items: [
         {
@@ -74,7 +71,7 @@ export const sideConfig = {
   class: {
     role: ['ADMIN'],
     config: {
-      icon: <TeacherBlackboard />,
+      icon: <div />,
       title: 'Классы',
       items: [
         {
@@ -91,7 +88,7 @@ export const sideConfig = {
   settings: {
     role: ['ADMIN', 'LIBRARIAN'],
     config: {
-      icon: <Settings />,
+      icon: <div />,
       title: 'Разное',
       items: [
         {

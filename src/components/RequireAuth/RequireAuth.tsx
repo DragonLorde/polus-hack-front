@@ -6,9 +6,8 @@ import { AuthContextStore } from '../../store'
 const RequireAuth = () => {
   const { state } = useContext(AuthContextStore)
   const { isAuth } = state
-
   const location = useLocation()
-
+  console.log(isAuth)
   return isAuth ? (
     <LayoutContainer>
       <Outlet />

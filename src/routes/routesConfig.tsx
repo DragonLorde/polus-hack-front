@@ -1,20 +1,13 @@
-import { Welcome } from '@frontend-packages/russw-ui-kit'
-
 import { LogOutFunc } from '../components/LogOut'
-import {
-  AddOrganization,
-  ListOrganization,
-  WorkingWithLicenses,
-  UserList,
-  ListLicenses,
-  Auth,
-  NewUser,
-  NotFound,
-  ListClasses,
-  AddClass,
-} from '../pages'
-import { AddUser } from '../pages/AddUser'
+
 import { ROUTES } from './ROUTES'
+import { Auth } from '../pages/Auth'
+import { NotFound } from '../pages/NotFound'
+import { Welcome } from '../components/Welcome'
+import { CarGo } from '../pages/CarGo'
+import { CarGoList } from '../pages/CarGoList'
+import { Order } from '../pages/Order'
+import { MapContainer } from '../pages/Map'
 
 export const routesSecure = [
   {
@@ -22,36 +15,20 @@ export const routesSecure = [
     component: <Welcome />,
   },
   {
-    path: ROUTES.addOrganization,
-    component: <AddOrganization />,
+    path: '/CarGoList',
+    component: <CarGoList />,
   },
   {
-    path: ROUTES.listOrganization,
-    component: <ListOrganization />,
+    path: '/CarGo',
+    component: <CarGo />,
   },
   {
-    path: ROUTES.listLicenses,
-    component: <ListLicenses />,
+    path: '/map',
+    component: <MapContainer />,
   },
   {
-    path: ROUTES.workingWithLicenses,
-    component: <WorkingWithLicenses />,
-  },
-  {
-    path: ROUTES.userList,
-    component: <UserList />,
-  },
-  {
-    path: ROUTES.addUser,
-    component: <AddUser />,
-  },
-  {
-    path: ROUTES.listClasses,
-    component: <ListClasses />,
-  },
-  {
-    path: ROUTES.addClass,
-    component: <AddClass />,
+    path: '/cargo_details',
+    component: <Order />,
   },
   {
     path: ROUTES.logout,
@@ -63,10 +40,6 @@ export const routes = [
   {
     path: ROUTES.auth,
     component: <Auth />,
-  },
-  {
-    path: ROUTES.newUserInviteId,
-    component: <NewUser />,
   },
   {
     path: '/*',

@@ -1,9 +1,9 @@
+import {
+  Layout, Panel, Typography, PersonMenu,
+} from '@dragonlorde/sapfiron-ui-kit'
 import React, {
   FC, useContext, useEffect, useState,
 } from 'react'
-import {
-  Layout, Panel, PersonMenu, Typography,
-} from '@frontend-packages/russw-ui-kit'
 import { Link, useLocation } from 'react-router-dom'
 import { AuthContextStore } from '../../../store'
 import { LogOut } from '../../LogOut'
